@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>tmtfitness</title>
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:description" content=""/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
+	
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+	
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/animate.css') }}">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/icomoon.css') }}">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/style.css') }}">
+
+	
+	<script src="{{url_for('static', filename='js/modernizr-2.6.2.min.js')}}"></script>
+
+	
+	
+		</head>
+		<body>
+			
+		<div class="fh5co-loader"></div>
+		
+		<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="top">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-right">
+							<p class="num">Tel : 0342 322 12 27</p>
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								
+							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="index.html">TMT<span>.Fitness</span></a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li><a href="index.html">Anasayfa</a></li>
+							<li><a href="gallery.html">Hakkımızda</a></li>
+							<li><a href="contact.html">İletişim</a></li>
+							<li><a href="giris.html">Giriş</a></li>
+							<li><a href="kayit.html">Kayıt</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+
+	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(static/images/cover3.jpg); height: 250px;" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </header>
+    
+    <div id="fh5co-services" class="fh5co-bg-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 text-center animate-box"  style="width: 100%; position: static; float: left;">
+					<div class="services" >
+                        <h3>İdeal Kilo Hesaplama</h3>
+                        <div class="icerik" style="background-color:white;">
+                            <div>
+                                <input
+                                       id="boy" class="ggg" type="number"required autocomplete="off" placeholder="Boyunuzu Giriniz"/>
+                                <input
+                                      id="kilo" class="ggg" type="number"required autocomplete="off" placeholder="Kilonuzu Giriniz" />
+                                <p>Cinsiyet:</p>
+                                <label for="male1">Erkek
+                                    <input type="radio" id="male1" name="gender" value="male">
+                                </label>
+                                
+                                <label for="female1">Kadın
+                                        <input type="radio" id="female1" name="gender" value="female">
+                                </label>
+                            </div>
+                            <div>
+								<button onclick="hesapla()" style="background-color: rgb(0, 177, 247);
+								border: none;
+								 width: 150px;
+								 height: 50px;
+								 color: black;
+								 border-radius: 30px;
+
+								">
+								Hesapla</button>
+							</div>
+                            <div class="div2">
+                                <output id="x1" for="">Sonuç</output>
+                                <output id="x2" for="">Vücut Kitle Indeksiniz</output>
+                            </div>
+                            <div>
+                                    <table>
+                                            <tr>
+                                              <th>Durum</th>
+                                              <th>Aralık</th>
+                                            </tr>
+                                            <tr>
+                                              <td>Zayıf</td>
+                                              <td>18,5'den az</td>
+                                            </tr>
+                                            <tr>
+                                              <td>İdeal</td>
+                                              <td>18,5-24,9</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kilolu</td>
+                                                <td>25-29,9</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Obez</td>
+                                                <td>30+</td>
+                                            </tr>
+                                    </table>
+                            </div>
+                                
+                        </div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+    </div>
+     <script>
+	    function hesapla() {
+			var kilo = document.getElementById("kilo").value;
+			var boy = document.getElementById("boy").value;
+			if(kilo > 0 && boy > 0){
+				var sonuc = kilo/(boy/100*boy/100)
+				document.getElementById("x1").value = sonuc;
+				if(sonuc < 18.5){
+					document.getElementById("x2").value = "Zayif";
+				}//www.bilisimogretmeni.com
+				if(sonuc > 18.5 && sonuc < 25){
+					document.getElementById("x2").value = "Ideal";
+				}
+				if(sonuc > 25 && sonuc <29){
+					document.getElementById("x2").value = "Kilolu";
+				}
+				if(sonuc > 30){
+					document.getElementById("x2").value = "Obez";
+				}
+			}//www.bilisimogretmeni.com
+			else{
+				alert("Böyle kilo,boy olmaz tekrar dene");
+			}
+		}
+		</script>
+    <div id="fh5co-services" class="fh5co-bg-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center animate-box"  style="width: 100%; position: static; float: left;">
+                        <div class="services">
+                            <h3>VÜCUT YAĞ ORANI</h3>
+                            <div class="icerik" style="background-color:white;">
+                                <div>
+                                    <input id="boy1" class="ggg" type="number"required autocomplete="off" placeholder="Boyunuz"/>
+                                    <input id="boyun1" class="ggg" type="number"required autocomplete="off" placeholder="Boyun çerçvesi" />
+                                    <input id="bel1" class="ggg" type="number"required autocomplete="off" placeholder="Bel çerçevesi" />
+                                    <input id="kilo1" class="ggg" type="number"required autocomplete="off" placeholder="Kalça" />
+
+                            
+                                </div>
+                                <div class="div3">
+                                        
+                                        <label for="male1">Erkek
+                                            <input type="radio" id="erkek" name="gender" value="male" onclick="kapat()">
+                                        </label>
+                                        
+                                        <label for="female1">Kadın
+                                                <input type="radio" id="kadin" name="gender" value="female" onclick="ac()">
+                                        </label>
+                                </div>
+                                <div>
+									<button onclick="hesapla1()" style="background-color: rgb(0, 177, 247);
+									border: none;
+									 width: 150px;
+									 height: 50px;
+									 color: black;
+									 border-radius: 30px;
+
+									">
+									Hesapla</button>
+								</div>
+                                <div class="div2">
+                                    <output id="x11" for="">Sonuç</output>
+                                    <output id="x22" for="">Yag Orani (%)</output>
+                                </div>
+                                
+                                    
+                            </div>
+                            <div class="icerik" style="background-color:white;">
+                                    <div class="prog2">
+                                            <table class="tablo2">
+                                                    <tr>
+                                                      <th>Durum</th>
+                                                      <th>Erkek</th>
+                                                      <th>Kadın</th>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Yaşam için esansiyel</td>
+                                                      <td>%2-5</td>
+                                                      <td>%10-13</td>
+                                                      
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Sporcu</td>
+                                                      <td>%6-13</td>
+                                                      <td>%14-20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fit</td>
+                                                        <td>%14-17</td>
+                                                        <td>%21-24</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ortalama</td>
+                                                        <td>%18-24</td>
+                                                        <td>%25-31</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Çok yağlı veya obez</td>
+                                                        <td>%25+</td>
+                                                        <td>%32+</td>
+                                                    </tr>
+                                            </table>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+            <script>
+			function kapat(){
+				var d=document.getElementById("erkek").checked;
+				if(d==true){
+					document.getElementById("kilo1").disabled = true;
+				}
+			}
+			function ac(){
+				document.getElementById("kilo1").disabled = false;
+			}
+
+			function hesapla1() {
+				var boy = document.getElementById("boy1").value;
+				var boyun = document.getElementById("boyun1").value;
+				var bel = document.getElementById("bel1").value;
+				var kilo = document.getElementById("kilo1").value;
+				var x=document.getElementById("erkek").checked;
+				var y=document.getElementById("kadin").checked;
+				if(x==true){
+
+					if(boyun > 0 && boy > 0 && bel > 0 ){
+						var sonuc = (495/(1.0324-0.19077*Math.log10(bel-boyun)+0.15456*Math.log10(boy)))-450;
+						document.getElementById("x11").value = sonuc+"%";
+						if(sonuc > 2  && sonuc <= 5){
+							document.getElementById("x22").value = "Yaşam için esansiyel";
+						}//www.bilisimogretmeni.com
+						if(sonuc > 6 && sonuc <= 13){
+							document.getElementById("x22").value = "Sporcu";
+						}
+						if(sonuc > 14 && sonuc <= 17){
+							document.getElementById("x22").value = "Fit";
+						}
+						if(sonuc > 18 && sonuc <= 24 ){
+							document.getElementById("x22").value = "Ortalama";
+						}
+						if(sonuc >= 25 ){
+							document.getElementById("x22").value = "Çok yağlı veya obez	";
+						}
+					}//www.bilisimogretmeni.com
+					else{
+						alert("Böyle kilo,boy olmaz tekrar dene");
+					}
+				}
+				else if(y==true){
+
+					if(boyun > 0 && boy > 0 && bel> 0 && kilo > 0){
+						var sonuc = (495/(1.29579-0.35004*Math.log10(bel+kilo-boyun)+0.22100*Math.log10(boy)))-450;
+						document.getElementById("x11").value = sonuc+"%";
+						if(sonuc > 10  && sonuc <= 13){
+							document.getElementById("x22").value = "Yaşam için esansiyel";
+						}//www.bilisimogretmeni.com
+						if(sonuc > 14 && sonuc <= 20){
+							document.getElementById("x22").value = "Sporcu";
+						}
+						if(sonuc > 21 && sonuc <= 24){
+							document.getElementById("x22").value = "Fit";
+						}
+						if(sonuc > 25 && sonuc <= 31 ){
+							document.getElementById("x22").value = "Ortalama";
+						}
+						if(sonuc >= 32 ){
+							document.getElementById("x22").value = "Çok yağlı veya obez	";
+						}
+						else{
+							alert("Böyle kilo,boy olmaz tekrar dene");
+						}
+					}//www.bilisimogretmeni.com
+					else{
+						alert("Böyle kilo,boy olmaz tekrar dene");
+					}
+				}
+				else{
+					alert("Cinsiyeti seçiniz...!!!");
+				}
+
+			}
+			</script>
+        
+
+
+	
+	
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/jquery.easing.1.3.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	
+	<script src="{{url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/jquery.stellar.min.js')}}"></script>
+	
+	<script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/jquery.countTo.js')}}"></script>
+	
+	<script src="{{url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/magnific-popup-options.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+
+
+	</body>
+</html>
+

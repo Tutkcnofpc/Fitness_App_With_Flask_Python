@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>tmtfitness</title>
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:description" content=""/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
+		<style>
+			.hesap1{
+			  background-color: #fcfcfc;
+			  text-align: center;
+			  color: #000000;
+			  width: 100%;
+			  height: 50px;
+			  border: 1px solid black;
+			  border-radius: 30px;
+			  margin-top: 10px;
+			}
+			form div{
+				width: 20%;
+				position: relative;
+  				float: left;
+			}
+			.butt{
+				box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0px 0px 0px 0 rgba(0,0,0,0);
+				background-color:rgb(5, 165, 228);
+				color:black;
+				height: 50px;
+				border: 1px solid black;
+			  	border-radius: 30px;
+			}
+
+		</style>
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/animate.css') }}">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/icomoon.css') }}">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+	<script src="{{url_for('static', filename='js/modernizr-2.6.2.min.js')}}"></script>
+
+
+
+
+		</head>
+		<body>
+
+		<div class="fh5co-loader"></div>
+
+		<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="top">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-right">
+							<p class="num">Tel : 0342 322 12 27</p>
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+
+							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="index.html">TMT<span>.Fitness</span></a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li><a href="index.html">Anasayfa</a></li>
+							<li><a href="gallery.html">Hakkımızda</a></li>
+							<li><a href="contact.html">İletişim</a></li>
+							<li><a href="giris.html">Giriş</a></li>
+							<li><a href="kayit.html">Kayıt</a></li>
+
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</nav>
+
+	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(static/images/cover3.jpg); height: 250px;" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </header>
+
+
+    <div id="fh5co-services" class="fh5co-bg-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center animate-box"  style="width: 100%; position: static; float: left;">
+                        <div class="services">
+                            <h3>SONUCLAR</h3>
+                            <div class="icerisssssk">
+                                    <h1>Antereman Programı:</h1>
+
+                                    {{ hata }} <br>
+
+                                    <strong>Yağ Oranı %:</strong> {{ sonuc }} <br>
+                                    <strong>Kilonuz:</strong> {{ kilo }} <br>
+									<img style="width : 100% ;height: auto; " src={{ u }}>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+			<div id="fh5co-services" class="fh5co-bg-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center animate-box"  style="width: 100%; position: static; float: left;">
+                        <div class="services">
+                            <h3>SONUCLAR</h3>
+                            <div class="icerisssssk">
+                                    <h1>Diyet Programi:</h1>
+
+
+
+									<img style="width : 100%;height: auto; " src={{ u1}}>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/jquery.easing.1.3.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/jquery.stellar.min.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/jquery.countTo.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/magnific-popup-options.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+	</body>
+</html>
+
